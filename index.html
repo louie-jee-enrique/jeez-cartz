@@ -12,6 +12,7 @@
             text-align: center;
             margin: 10px;
             font-style:monospace;
+            
         }
         p {
             text-align: center;
@@ -62,16 +63,17 @@
             flex-wrap: wrap;
         }
          article {
-            width: 250px;
-            padding: 2px;
+                width: 250px;
+             padding: 2px;
             border: 10px solid #000000;
-            border-radius: 50px;
-            text-align: center;
-            background-color: skyblue;
-            margin-top: 100px;   
-            margin-right: auto;
-            margin-left: auto;
-            margin-bottom: 50px;
+             border-radius: 50px;
+             text-align: center;
+             background-color: skyblue;
+              margin-top: 100px;
+             margin-right: auto;
+              margin-left: auto;
+             margin-bottom: 50px;
+             transition: transform 0.5s ease, box-shadow 0.5s ease;
         }
 
         article img {
@@ -80,6 +82,10 @@
             object-fit: cover;
             border-radius: 10px;
         }
+        article:hover {
+            transform: translateY(-15px) scale(1.03);
+             box-shadow: 0 15px 25px rgba(0, 0, 0, 0.4);
+}
         nav ul {
             list-style-type: none;
              display: flex;
@@ -91,7 +97,8 @@
         }
         nav a:hover {
             color: pink;
-            text-decoration: underline;
+            background-color: rgb(90, 10, 10);
+            box-shadow: 0 0 15px gold;
             cursor: progress;
 
         }
@@ -102,6 +109,10 @@
         nav a {
             color: gold;
             font-size: 25px;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 10px;
+            transition: 0.3s ease;
         }
          main {
             padding: 30px;
