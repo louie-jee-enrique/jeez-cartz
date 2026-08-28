@@ -1,7 +1,7 @@
 <head>
 
-
     <style>
+
         body {
             background-color: skyblue;
             margin: 0;
@@ -20,7 +20,8 @@
             margin: 10px;
             font-style: monospace;
         }
-        h2{
+
+        h2 {
             color: white;
         }
 
@@ -29,20 +30,24 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            gap: 70px;
+            gap: 40px;
             padding: 6px;
             margin: 10px;
         }
 
         nav a {
             color: gold;
-            text-decoration: none;
             font-size: 25px;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 10px;
+            transition: 0.3s ease;
         }
 
         nav a:hover {
             color: pink;
-            text-decoration: underline;
+            background-color: rgb(90, 10, 10);
+            box-shadow: 0 0 15px gold;
             cursor: pointer;
         }
 
@@ -60,7 +65,7 @@
         }
 
         .product-details h1 {
-            color: rgb(44, 3, 3);
+            color: white;
             font-size: 50px;
         }
 
@@ -82,10 +87,10 @@
             border-collapse: collapse;
             margin-top: 30px;
             font-size: 20px;
-            
         }
 
-        th, td {
+        th,
+        td {
             border: 3px solid white;
             padding: 12px;
             text-align: center;
@@ -93,6 +98,10 @@
 
         th {
             background-color: gold;
+        }
+
+        td {
+            color: white;
         }
 
         footer {
@@ -106,10 +115,123 @@
             font-size: 20px;
             margin: 0;
         }
-        td{
-            color: white;
+
+
+        .order-form {
+            background-color: rgb(44, 3, 3);
+            max-width: 700px;
+            margin: 30px auto;
+            padding: 30px;
+            border-radius: 20px;
+            text-align: center;
         }
+
+        .order-form h2 {
+            color: white;
+            text-align: center;
+            font-size: 35px;
+        }
+
+        .order-form label {
+            color: white;
+            font-size: 18px;
+            
+        }
+
+        .order-form input {
+            margin: 8px;
+        }
+
+        .order-form input[type="number"] {
+            padding: 8px;
+            border: 2px solid gold;
+            border-radius: 8px;
+        }
+         .order-form input[type="email"] {
+            padding: 8px;
+            border: 2px solid gold;
+            border-radius: 8px;
+            text-align: left;
+         }
+
+        .order-form fieldset {
+            border: 3px solid gold;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: left;
+            margin-top: 20px;
+        }
+
+        .order-form legend {
+            color: gold;
+            font-size: 18px;
+            padding: 5px;
+        }
+
+        .radio-option {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 10px;
+            margin: 10px 0;
+        }
+
+        .radio-option input {
+            margin: 0;
+        }
+
+        .radio-option label {
+            margin: 0;
+        }
+
+        .order-form p {
+            color: white;
+            font-size: 18px;
+            text-align: center;
+}
+       .checkbox-option {
+           display: flex;
+           align-items: center;
+           justify-content: flex-start;
+           gap: 10px;
+           width: fit-content;
+           margin: 10px auto;
+}
+
+        .checkbox-option input {
+           margin: 0;
+}
+
+        .checkbox-option label {
+           margin: 0;
+}
+        .extras {
+           text-align: center;
+}
+
+         .extras p {
+           margin-bottom: 15px;
+}
+
+        .order-form button {
+            background-color: gold;
+            color: rgb(44, 3, 3);
+            padding: 10px 20px;
+            border: 2px solid white;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 18px;
+            margin-top: 20px;
+            transition: 0.3s ease;
+        }
+
+        .order-form button:hover {
+            background-color: pink;
+            transform: translateY(-5px);
+        }
+
     </style>
+
 </head>
 
 <body>
@@ -133,7 +255,10 @@
         <section class="product-details">
 
             <h1>1K Robux</h1>
-            <img src="../bobux.jpg" alt="Roblox Robux icon representing 1,000 Robux">
+
+            <img
+                src="../bobux.jpg"
+                alt="Roblox Robux icon representing 1,000 Robux">
 
             <p class="description">
                 Get 1,000 Robux to enhance your Roblox gaming
@@ -141,10 +266,13 @@
                 accessories, avatar items, and other content available
                 in supported Roblox experiences.
             </p>
+
             <br>
+
             <h2>Specifications</h2>
 
             <table>
+
                 <tr>
                     <th>Feature</th>
                     <th>Details</th>
@@ -169,15 +297,133 @@
                     <td>Price</td>
                     <td>₱600</td>
                 </tr>
+
             </table>
+
+        </section>
+
+        <section class="order-form">
+
+            <h2>Order Enquiry</h2>
+
+            <form>
+
+                <label for="quantity">Quantity:</label>
+
+                <input
+                    type="number"
+                    id="quantity"
+                    name="quantity"
+                    min="1"
+                    max="20"
+                    required>
+
+                <br><br>
+
+                <fieldset>
+
+                    <legend>
+                        How would you like to receive your order?
+                    </legend>
+
+                    <div class="radio-option">
+
+                        <input
+                            type="radio"
+                            id="standard"
+                            name="delivery"
+                            value="standard">
+
+                        <label for="standard">
+                            Standard Delivery
+                        </label>
+
+                    </div>
+
+
+                    <div class="radio-option">
+
+                        <input
+                            type="radio"
+                            id="express"
+                            name="delivery"
+                            value="express">
+
+                        <label for="express">
+                            Express Delivery
+                        </label>
+
+                    </div>
+
+                </fieldset>
+
+                <div class="extras">
+                <p>Optional Extras:</p>
+                </div>
+
+                <div class="checkbox-option">
+
+                    <input
+                        type="checkbox"
+                        id="order-confirmation"
+                        name="extras"
+                        value="confirmation">
+
+                    <label for="order-confirmation">
+                            Order Confirmation
+                    </label>
+
+                </div>
+
+
+                <div class="checkbox-option">
+
+                    <input
+                        type="checkbox"
+                        id="express-handling"
+                        name="extras"
+                        value="express">
+
+                    <label for="express-handling">
+                             Express Handling
+                    </label>
+
+                </div>
+
+                <br>
+
+                <label for="email">
+                    Contact Email:
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required>
+
+
+                <br><br>
+
+                <button type="submit">
+                    Send message
+                </button>
+
+            </form>
 
         </section>
 
     </main>
 
+
     <footer>
-        <p>© 2026 Jeez Cartz. All rights reserved.</p>
+
+        <p>
+            © 2026 Jeez Cartz. All rights reserved.
+        </p>
+
     </footer>
 
 </body>
+
 </html>
