@@ -188,34 +188,39 @@
             color: white;
             font-size: 18px;
             text-align: center;
-}
+         }
        .checkbox-option {
-           display: flex;
-           align-items: center;
-           justify-content: flex-start;
-           gap: 10px;
-           width: fit-content;
-           margin: 10px auto;
-}
+        display: flex;
+        align-items: center;
+        gap: 10px;
+         width: 220px;
+         margin: 10px auto;
+         text-align: left;
+        }
 
         .checkbox-option input {
-           margin: 0;
-}
-
-        .checkbox-option label {
-           margin: 0;
-}
+            margin: 0;
+        }
+         .checkbox-option label {
+            margin: 0;
+        }
         .extras {
-           text-align: center;
-}
+           border: 3px solid gold;
+           border-radius: 10px;
+           padding: 20px;
+            margin: 25px auto;
+            width: auto;
+            text-align: center;
+        }
 
          .extras p {
-           margin-bottom: 15px;
-}
+           margin-bottom: 30px;
+           margin-right: 50px;
+        }
 
         .order-form button {
             background-color: gold;
-            color: rgb(44, 3, 3);
+            color: black;
             padding: 10px 20px;
             border: 2px solid white;
             border-radius: 10px;
@@ -226,8 +231,10 @@
         }
 
         .order-form button:hover {
-            background-color: pink;
-            transform: translateY(-5px);
+            background-color: rgb(44, 3, 3);
+            box-shadow: 0 0 20px gold; 
+            transform: translateY(-10px);
+            color: pink;
         }
 
     </style>
@@ -340,7 +347,6 @@
 
                     </div>
 
-
                     <div class="radio-option">
 
                         <input
@@ -359,7 +365,7 @@
 
                 <div class="extras">
                 <p>Optional Extras:</p>
-                </div>
+                
 
                 <div class="checkbox-option">
 
@@ -389,7 +395,7 @@
                     </label>
 
                 </div>
-
+                </div>
                 <br>
 
                 <label for="email">
