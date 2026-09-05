@@ -1,0 +1,613 @@
+/*1. VARIABLES*/
+
+:root {
+    --brand-color: gold;
+    --dark-ink: rgb(44, 3, 3);
+    --muted-grey: #666666;
+    --light-background: skyblue;
+    --white: #ffffff;
+    --black: #000000;
+    --pink: pink;
+}
+
+
+/*2. BASE STYLES*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--light-background);
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--dark-ink);
+}
+
+h1 {
+    font-size: 70px;
+    color: var(--white);
+    text-align: center;
+    margin: 10px;
+    font-family: monospace;
+}
+
+p {
+    text-align: center;
+    font-size: 35px;
+    color: var(--black);
+}
+
+
+/* 3. layout */
+
+header {
+    background-color: var(--dark-ink);
+    padding: 20px;
+}
+
+main {
+    padding: 30px;
+}
+
+footer {
+    background-color: var(--dark-ink);
+    color: var(--white);
+    text-align: center;
+    padding: 40px;
+    line-height: 1.6;
+}
+
+.foot {
+    margin: 0;
+    font-size: 20px;
+    color: var(--white);
+}
+
+
+/* 4. NAV*/
+
+nav {
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+nav a {
+    color: var(--brand-color);
+    font-size: 25px;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--pink);
+    background-color: var(--dark-ink);
+    box-shadow: 0 0 15px var(--brand-color);
+    cursor: progress;
+}
+
+
+/* 5.section (about)*/
+
+section {
+    background-color: var(--dark-ink);
+    color: var(--white);
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+section img {
+    width: auto;
+    max-width: 100%;
+    border-radius: 15px;
+}
+
+h2 {
+    color: var(--white);
+    text-align: center;
+    font-size: 40px;
+}
+
+.bio {
+    color: var(--white);
+    text-align: center;
+    font-style: italic;
+    font-size: 25px;
+}
+
+
+/* 6. PRODUCTS*/
+
+.pro {
+    text-align: center;
+    font-size: 50px;
+    margin-top: 50px;
+    color: var(--dark-ink);
+}
+
+.products {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-decoration: none;
+}
+.products a {
+    text-decoration: none;
+    color: var(--white);
+}
+article {
+    width: 250px;
+    padding: 2px;
+    border: 10px solid var(--black);
+    border-radius: 50px;
+    text-align: center;
+    background-color: var(--light-background);
+    margin-top: 100px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 50px;
+    text-decoration: none;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+h3 {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 10px;
+    color: var(--dark-ink);
+}
+
+article p {
+    color: var(--dark-ink);
+    text-align: center;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+article img {
+    width: auto;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+article:hover {
+    transform: translateY(-15px) scale(1.03);
+    box-shadow: 0 15px 25px var(--black);
+}
+
+
+/*7. buttons/links */
+
+.hey {
+    display: inline-block;
+    background-color: var(--dark-ink);
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 20px;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.hey:hover {
+    color: var(--black);
+    background-color: var(--brand-color);
+    box-shadow: 0 0 20px var(--dark-ink);
+    cursor: progress;
+    transform: translateY(-15px) scale(1.03);
+}
+
+.pera {
+    font-weight: bolder;
+}
+
+.huhu {
+    display: inline-block;
+    background-color: var(--brand-color);
+    padding: 15px 20px;
+    border-radius: 20px;
+    margin-top: 15px;
+    font-weight: bold;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    color: var(--black);
+}
+
+.huhu:hover {
+    color: var(--pink);
+    background-color: var(--dark-ink);
+    box-shadow: 0 0 15px var(--brand-color);
+    cursor: progress;
+    transform: translateY(-15px) scale(1.03);
+    font-weight:800;
+}
+
+
+/*8. ABOUT*/
+
+.about {
+    font-size: 20px;
+    line-height: 1.6;
+    color: var(--white);
+}
+
+
+/* 9. CONTAC*/
+
+.contact-title {
+    text-align: center;
+    font-size: 50px;
+    color: var(--dark-ink);
+    margin-top: 30px;
+}
+
+.contact-text {
+    text-align: center;
+    font-size: 25px;
+    color: var(--white);
+}
+
+form {
+    max-width: 700px;
+    margin: 40px auto;
+}
+
+fieldset {
+    background-color: var(--dark-ink);
+    border: 5px solid var(--brand-color);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 10px 15px 1px rgba(147, 50, 50, 0.2);
+}
+
+legend {
+    background-color: var(--brand-color);
+    color: var(--dark-ink);
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+label {
+    color: var(--white);
+    font-size: 22px;
+    font-weight: bold;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    margin-top: 8px;
+    border: 3px solid var(--brand-color);
+    border-radius: 10px;
+    background-color: var(--light-background);
+    color: var(--dark-ink);
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 3px solid var(--pink);
+    box-shadow: 0 0 15px var(--brand-color);
+}
+
+select option {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+button {
+    display: block;
+    margin: 25px auto 5px;
+    background-color: var(--brand-color);
+    color: var(--dark-ink);
+    padding: 15px 25px;
+    border: none;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+button:hover {
+    color: var(--pink);
+    background-color: var(--black);
+    box-shadow: 0 0 15px var(--brand-color);
+    transform: translateY(-5px) scale(1.03);
+}
+
+
+/*10. CONTACT INFO*/
+
+.contact-info {
+    background-color: var(--dark-ink);
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 20px;
+    border: 5px solid var(--brand-color);
+    box-shadow: 10px 15px 1px rgba(147, 50, 50, 0.2);
+}
+
+.contact-info h2 {
+    color: var(--brand-color);
+    text-align: center;
+    font-size: 40px;
+    margin-top: 0;
+}
+
+.contact-info ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0 0;
+    text-align: left;
+}
+
+.contact-info li {
+    background-color: var(--light-background);
+    color: var(--dark-ink);
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-info li:hover {
+    background-color: var(--brand-color);
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px var(--brand-color);
+}
+
+
+/* 11. ROBUx*/
+
+.product-details {
+    background-color: var(--dark-ink);
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.product-details h1 {
+    color: var(--white);
+    font-size: 50px;
+}
+
+.product-details img {
+    width: 300px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.description {
+    color: var(--white);
+    font-size: 22px;
+    line-height: 1.6;
+}
+
+
+/* 12. table*/
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+th,
+td {
+    border: 3px solid var(--white);
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: var(--brand-color);
+}
+
+td {
+    color: var(--white);
+}
+
+
+/*13. ORDER FORM*/
+
+.order-form {
+    background-color: var(--dark-ink);
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.order-form h2 {
+    color: var(--white);
+    text-align: center;
+    font-size: 35px;
+}
+
+.order-form label {
+    color: var(--white);
+    font-size: 18px;
+    text-align: left;
+    font-weight: normal;
+}
+
+.order-form input {
+    margin: 8px;
+}
+
+.order-form input[type="number"] {
+    width: 60px;
+    padding: 8px;
+    border: 2px solid var(--brand-color);
+    border-radius: 8px;
+    text-align: left;
+    background-color: var(--white);
+    box-sizing: content-box;
+}
+
+.order-form input[type="email"] {
+    width: 175px;
+    padding: 8px;
+    border: 2px solid var(--brand-color);
+    border-radius: 8px;
+    text-align: left;
+    box-sizing: content-box;
+    background-color: var(--white);
+    font-weight: normal;
+}
+
+.order-form fieldset {
+    border: 3px solid var(--brand-color);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    margin-top: 20px;
+    box-shadow: none;
+}
+
+.order-form .bobux {
+    color: var(--brand-color);
+    font-size: 18px;
+    padding: 5px;
+    background-color: transparent;
+    font-weight: normal;
+}
+
+.radio-option {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    margin: 10px 0;
+    font-weight: normal;
+}
+
+.radio-option input[type="radio"] {
+    width: auto;
+    margin: 0;
+    flex: 0 0 auto;
+}
+
+.radio-option label {
+    margin: 0;
+    font-weight: normal;
+}
+
+.order-form input[type="radio"],
+.order-form input[type="checkbox"] {
+    width: auto;
+    padding: 0;
+    margin: 0;
+}
+
+.order-form input[type="radio"]:focus,
+.order-form input[type="checkbox"]:focus {
+    outline: none;
+}
+
+.order-form input[type="radio"]:checked {
+    accent-color: var(--brand-color);
+}
+
+input[type="checkbox"]:checked {
+    accent-color: green;
+}
+
+.order-form p {
+    color: var(--white);
+    font-size: 18px;
+    text-align: center;
+}
+
+.checkbox-option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 220px;
+    margin: 10px auto;
+    text-align: left;
+    font-weight: normal;
+}
+
+.checkbox-option input[type="checkbox"] {
+    width: auto;
+    margin: 0;
+    flex: 0 0 auto;
+}
+
+.checkbox-option label {
+    margin: 0;
+    font-weight: normal;
+}
+
+.extras {
+    border: 3px solid var(--brand-color);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 25px auto;
+    width: auto;
+    text-align: center;
+}
+
+.extras p {
+    margin-bottom: 30px;
+    margin-right: 50px;
+}
+
+.order-form button {
+    background-color: var(--brand-color);
+    color: var(--black);
+    padding: 10px 22px;
+    border: 2px solid var(--black);
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 20px;
+    transition: 0.3s ease;
+}
+
+.order-form button:hover {
+    background-color: var(--black);
+    color: var(--brand-color);
+    box-shadow: 0 0 15px var(--pink);
+    transform: translateY(-5px) scale(1.03);
+    border: 2px solid var(--brand-color);
+    cursor: progress;
+}
