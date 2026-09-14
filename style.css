@@ -43,9 +43,12 @@ p {
 
 /* 3. layout */
 
-header {
-    background-color: var(--dark-ink);
+.header {
+      background-color: var(--dark-ink);
     padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 main {
@@ -69,23 +72,16 @@ footer {
 
 /* 4. NAV*/
 
-nav {
-    text-align: center;
-}
-
-nav ul {
+.header nav ul {
     list-style: none;
     padding: 0;
-    margin: 10px;
-    text-align: center;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+    align-items: center;
 }
 
-nav li {
-    display: inline-block;
-    margin: 0 20px;
-}
-
-nav a {
+.header nav a {
     color: var(--brand-color);
     font-size: 25px;
     text-decoration: none;
@@ -94,30 +90,36 @@ nav a {
     transition: 0.3s ease;
 }
 
-nav a:hover {
+.header nav a:hover {
     color: var(--pink);
     background-color: var(--dark-ink);
     box-shadow: 0 0 15px var(--brand-color);
     cursor: progress;
 }
 
-
 /* 5.section (about)*/
 
-section {
+.intro {
     background-color: var(--dark-ink);
     color: var(--white);
     max-width: 700px;
+    height: 500px;
     margin: 30px auto;
-    padding: 30px;
+    padding: 20px;
     border-radius: 15px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-section img {
-    width: auto;
+.intro img {
     max-width: 100%;
+    max-height: auto;
+    width: 700px;
+    height: auto;
     border-radius: 15px;
+    display: block;
+    margin: 0;
 }
 
 h2 {
@@ -145,9 +147,8 @@ h2 {
 
 .products {
     display: flex;
-    gap: 20px;
+    gap: 24px;
     justify-content: center;
-    align-items: flex-start;
     flex-wrap: wrap;
 }
 .products a {
@@ -157,7 +158,7 @@ h2 {
 /* PRODUCT CARDS */
 
 .nyay{
-    width: 250px;
+   width: 250px;
     height: 700px;
     padding: 20px;
     border: 10px solid var(--black);
@@ -165,9 +166,8 @@ h2 {
     border-radius: 50px;
     text-align: center;
     background-color: var(--white);
-    margin: 100px 0 50px;
     transition: transform 0.5s ease, box-shadow 0.5s ease;
-    margin:auto;
+     flex: 1 1 240px;
 }
 .nyay h3 {
      text-align: center;
@@ -223,7 +223,7 @@ h2 {
     background-color: var(--brand-color);
     padding: 15px 20px;
     border-radius: 20px;
-    margin-top: 15px;
+    margin-top: 100px;
     font-weight: bold;
     transition: transform 0.5s ease, box-shadow 0.5s ease;
     color: var(--black);
@@ -240,7 +240,21 @@ h2 {
 
 
 /*8. ABOUT*/
+.about-section {
+    background-color: var(--dark-ink);
+    color: var(--white);
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+}
 
+.about-section img {
+    width: auto;
+    max-width: 100%;
+    border-radius: 15px;
+}
 .about {
     font-size: 20px;
     line-height: 1.6;
