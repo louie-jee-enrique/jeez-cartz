@@ -42,17 +42,57 @@ p {
 
 
 /* 3. layout */
-
+.topnav {
+        display: grid;
+        grid-template-columns: 220px 1fr;
+         grid-template-areas:
+        "masthead masthead"
+        "side main"
+        "foot foot";
+        gap: 16px;
+}
 .header {
       background-color: var(--dark-ink);
     padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    grid-area: masthead;
 }
+aside {
+    grid-area: side;
+}
+aside h2 {
+    color: var(--brand-color);
+    text-align: center;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-left:5px ;
+    border-radius: 10px;
+    background-color: var(--dark-ink);
+    transition: 0.5s ease-in-out;
+}
+aside h2:hover{
+    color: var(--dark-ink);
+    background-color: var(--brand-color);
+    box-shadow: 0 0 20px var(--dark-ink);
+    transform: translateX(20px) scale(1);
+   }
+.phi{
+    background-color: var(--white);
+    border:5px solid var(--brand-color);
+    margin-left: 10px;
+    border-radius: 20px;
+    transition: 0.5s ease-in-out;
+}
+aside .phi:hover{
+    transform: translateX(20px) scale(1.1);
+    cursor:progress;
 
-main {
+}
+main {                                                                          
     padding: 30px;
+    grid-area: main;
 }
 
 footer {
@@ -61,6 +101,7 @@ footer {
     text-align: center;
     padding: 40px;
     line-height: 1.6;
+    grid-area: foot;
 }
 
 .foot {
@@ -260,6 +301,30 @@ h2 {
     line-height: 1.6;
     color: var(--white);
 }
+.opening {
+    background-color: var(--white);
+    padding: 15px;
+    border-radius: 15px;
+    border: 3px solid var(--brand-color);
+    text-align: center;
+    margin-left: 10px;
+    margin-top: 35px;
+    transition: 0.5s ease;
+}
+
+.opening p {
+    color: var(--dark-ink);
+    font-size: 18px;
+    margin: 8px 0;
+}
+
+.opening strong {
+    color: var(--dark-ink);
+    font-size: 20px;
+}
+aside .opening:hover{
+    transform: translateX(15px) scale(1.1);
+}
 
 
 /* 9. CONTACt*/
@@ -361,6 +426,47 @@ button:hover {
 
 /*10. CONTACT INFO*/
 
+.peyment {
+    background-color: var(--white);
+    border: 5px solid var(--brand-color);
+    border-radius: 20px;
+    margin-left: 10px;
+    margin-top: 35px;
+    transition: 0.5s ease;
+}
+aside .peyment:hover{
+    transform: translateX(15px) scale(1.1);
+}
+.gshock {
+    background-color: lightblue;
+    width: 120px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: 40px;
+    border-radius: 10px;
+    font-size: 30px;
+    text-align: center;
+    height: auto;
+    
+}
+.ibong {
+    background-color: lightgreen;
+    width: 120px;
+    margin-left: 40px;
+    border-radius: 10px;
+    font-size: 30px;
+    padding: 10px;
+}
+.dibit {
+    background-color: var(--muted-grey);
+     width: 170px;
+     margin-left: auto;
+    border-radius: 10px;
+    font-size: 30px;
+    padding: 0px;
+    height: auto;
+    margin-right: auto;
+}
 .contact-info {
     background-color: var(--dark-ink);
     max-width: 700px;
@@ -404,7 +510,22 @@ button:hover {
 
 
 /* 11. ROBUx*/
-
+.urdir {
+    background-color: var(--white);
+    border: 5px solid var(--brand-color);
+    border-radius: 10px;
+    margin-left: 10px;
+    padding: 10px;
+    text-align: left;
+    transition: 0.5s ease;
+    margin-top: 35px;
+}
+aside .urdir:hover {
+    transform: translateX(15px) scale(1.1);
+}
+.urdir p {
+    font-size: 20px;
+}
 .product-details {
     background-color: var(--dark-ink);
     max-width: 700px;
