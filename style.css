@@ -44,11 +44,12 @@ p {
 /* 3. layout */
 .topnav {
         display: grid;
-        grid-template-columns: 220px 1fr;
+        grid-template-columns: 1fr;
          grid-template-areas:
-        "masthead masthead"
-        "side main"
-        "foot foot";
+        "masthead"
+        "main"
+        "side"
+        "foot";
         gap: 16px;
 }
 .header {
@@ -108,6 +109,17 @@ footer {
     margin: 0;
     font-size: 20px;
     color: var(--white);
+}
+/*TABLET AND DESKTOP LAYOUT*/
+
+@media (min-width: 700px) {
+    .topnav {
+        grid-template-columns: 220px 1fr;
+        grid-template-areas:
+            "masthead masthead"
+            "side main"
+            "foot foot";
+    }
 }
 
 
