@@ -130,5 +130,5 @@ if (shopStatus) {
 console.log("Shop name:", shopName);
 console.log("Current year:", currentYear);
 console.log("Running total with tax:", runningTotal);
-console.log("Delivery fee:", deliveryFee)
+console.log("Delivery fee:", deliveryFee);
 console.log("Delivery Total:", deliveryTotal);
