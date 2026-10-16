@@ -96,13 +96,35 @@ main {
     grid-area: main;
 }
 
-footer {
+footer{
     background-color: var(--dark-ink);
     color: var(--white);
     text-align: center;
-    padding: 40px;
+    padding: 20px;
     line-height: 1.6;
     grid-area: foot;
+    font-size: 10px;
+}
+footer p {
+    font-size: 25px;
+    color: var(--white);
+}
+.calcu{
+    background-color: var(--brand-color);
+    width: 80%;
+    border-radius: 20px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    gap: 10px;
+    border: 4px solid var(--dark-ink);
+    transition:  0.5s ease-in-out;
+}
+.calcu:hover{
+    transform:translate(0,-20px) scale(1.1);
 }
 
 .foot {
@@ -186,6 +208,62 @@ h2 {
     text-align: center;
     font-style: italic;
     font-size: 25px;
+}
+
+.shop-information {
+    background-color: var(--dark-ink);
+    color: white;
+    padding: 30px;
+    margin: 24px 0;
+    border-radius: 12px;
+    border: 5px solid var(--brand-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: auto;
+    height: auto;
+    margin-top: 30px;
+    flex-direction: column;
+    transition:transform 0.5s ease-out;
+}
+.shop-information:hover{
+    transform: skew(10deg, 10deg);
+    cursor:grab;
+}
+
+.shop-information {
+    color: var(--white);
+    margin-bottom: 8px;
+    text-align: left;
+}
+#stock-status.unavailable,
+#shop-status.unavailable {
+    background-color: red;
+    color: white;
+}
+
+/* Green when in stock or open */
+#stock-status.available,
+#shop-status.available {
+    background-color: green;
+    color: white;
+}
+.shop-information p {
+    margin-bottom: 20px;
+   text-align: center;
+   color: var(--brand-color);
+}
+#stock-status{
+    background-color: green;
+    border-radius: 30px;
+    width: auto;
+    padding: 10px;
+}
+#shop-status{
+    background-color: green;
+    border-radius: 30px;
+    width: auto;
+    padding: 10px;
 }
 
 

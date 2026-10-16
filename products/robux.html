@@ -5,11 +5,11 @@
 
 </head>
 
-<body>
+<body data-price="600" data-stock="5">
 <div class="topnav">
     <header class="header">
 
-        <h1>Jeez Cartz</h1>
+        <h1 id="shop-name">Jeez Cartz</h1>
 
         <nav>
             <ul>
@@ -193,18 +193,36 @@
             </form>
 
         </section>
+ <section class="shop-information" >
+    <h2> Availability</h2>
+     <p id="stock-product">1K Robux: </p>
+    <p id="stock-status"></p>
+    </section>
 
+   <section class="shop-information">
+    <h2>Delivery Information</h2>
+    <p id="delivery-result"></p>
+    <p id="delivery-fee"></p>
+    <p id="delivery-total"></p>
+
+</section>
+
+ <section class="shop-information">
+    <h2>Shop Schedule</h2>
+    <p id="shop-status"></p>
+</section>
     </main>
 
 
     <footer>
 
-        <p class="foot">
+        <p id="copyright">
             © 2026 Jeez Cartz. All rights reserved.
         </p>
 
     </footer>
 </div>
+<script src="../cartz.js"></script>
 </body>
 
 </html>
