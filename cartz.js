@@ -70,8 +70,9 @@ if (stockStatus) {
         stockStatus.classList.add("unavailable");
         stockStatus.classList.remove("available");
 
-    } else if (stockCount > 0) {
-        stockStatus.classList.add("available");
+    }
+     else if (stockCount > 0) {
+     stockStatus.classList.add("available");
        stockStatus.classList.remove("unavailable");
     }
 }
@@ -117,18 +118,20 @@ if (shopStatusElement) {
     shopStatusElement.textContent = shopStatus;
 }
 
-if (shopStatus) {
-    if (isShopOpen === false) {
+
+if (shopStatusElement) {
+    if (isShopOpen) {
+        shopStatusElement.classList.add("available");
+        shopStatusElement.classList.remove("unavailable");
+    } else {
         shopStatusElement.classList.add("unavailable");
         shopStatusElement.classList.remove("available");
-    } else {
-       shopStatusElement.classList.add("available");
-        shopStatusElement.classList.remove("unavailable");
     }
 }
+
 // Console messages
 console.log("Shop name:", shopName);
 console.log("Current year:", currentYear);
 console.log("Running total with tax:", runningTotal);
 console.log("Delivery fee:", deliveryFee);
-console.log("Delivery Total:", deliveryTotal);
+console.log("Delivery Total:", finalTotal);
